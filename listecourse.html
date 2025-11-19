@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Liste de Courses Intelligente</title>
+		<link rel="stylesheet" href="listecourse.css" />
+		<script src="listecourse.js" defer></script>
+	</head>
+	<body>
+		<h1>Liste de Recettes</h1>
+		<!--Barre de Recherche-->
+		<div class="Search">
+			<input
+				type="text"
+				id="searchInput"
+				placeholder="Rechercher une recette"
+			/>
+			<button id="searchBtn">Rechercher</button>
+		</div>
+		<!--Resultat de Recherche-->
+		<!--"id" pour le js et "class" pour le style css -->
+		<div id="recettes" class="recettes"></div>
+		<!--Modale -->
+		<div id="modale" class="modale">
+			<div class="ModaleContent">
+				<h2 id="mealName"></h2>
+				<img id="mealImg" />
+				<h3>Ingrédients</h3>
+				<!--Créé la liste qu'on remplira en js-->
+				<ul id="ingredientsList"></ul>
+				<button id="addListBtn">Ajouter à ma liste de courses</button>
+				<button id="FermerModale">Fermer</button>
+			</div>
+		</div>
+		<!-- Liste de courses -->
+		<h2>Ma liste de courses</h2>
+		<ul id="shoppingList"></ul>
+		<button id="BtnVider">Vider la liste</button>
+	</body>
+</html>
